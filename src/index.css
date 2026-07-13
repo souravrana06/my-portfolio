@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #38BDF8;
+  --color-secondary: #6366F1;
+  --color-accent: #14B8A6;
+  --color-bg-base: #0F172A;
+  --color-surface-base: #1E293B;
+  --color-text-primary: #F8FAFC;
+  --color-text-secondary: #94A3B8;
+  
+  --font-sans: 'Outfit', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-heading: 'Outfit', 'Inter', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    cursor: none; /* Hide default cursor for custom cursor */
+  }
+
+  body {
+    background-color: #0F172A;
+    color: #F8FAFC;
+    overflow-x: hidden;
+    font-family: var(--font-sans);
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0F172A;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1E293B;
+    border-radius: 4px;
+    border: 2px solid #0F172A;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #38BDF8;
+  }
+}
+
+@layer utilities {
+  /* Premium Glassmorphism */
+  .glassmorphism {
+    background: rgba(30, 41, 59, 0.45);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .glassmorphism-hover:hover {
+    background: rgba(30, 41, 59, 0.6);
+    border-color: rgba(56, 189, 248, 0.3);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Text Glow */
+  .text-glow-blue {
+    text-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+  }
+
+  .text-glow-purple {
+    text-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
+  }
+
+  /* Mesh Gradient Background */
+  .mesh-gradient-bg {
+    background-color: #0F172A;
+    background-image: 
+      radial-gradient(at 10% 20%, rgba(99, 102, 241, 0.15) 0px, transparent 50%),
+      radial-gradient(at 90% 10%, rgba(56, 189, 248, 0.15) 0px, transparent 50%),
+      radial-gradient(at 50% 80%, rgba(20, 184, 166, 0.12) 0px, transparent 50%);
+  }
+
+  /* Hide cursor on touchscreen */
+  @media (pointer: coarse) {
+    html {
+      cursor: auto;
+    }
+    .custom-cursor {
+      display: none !important;
+    }
+  }
+}
+
+/* Animations for aurora blobs */
+@keyframes float-slow {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.95);
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 15s infinite ease-in-out;
+}
+
+@keyframes float-delayed {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  50% {
+    transform: translate(-40px, 40px) scale(1.08);
+  }
+}
+
+.animate-float-delayed {
+  animation: float-delayed 18s infinite ease-in-out;
+}
+
+/* Keyframes for spin-slow */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s infinite linear;
+}
