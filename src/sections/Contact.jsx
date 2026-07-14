@@ -17,7 +17,7 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     if (!formData.name || !formData.email || !formData.message) {
       setStatus("error");
       setStatusMessage("Please fill in all required fields.");
@@ -61,7 +61,7 @@ export default function Contact() {
   return (
     <section id="contact" className="py-12 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        
+
         {/* Section Title */}
         <div className="text-center mb-16">
           <motion.h2
@@ -80,7 +80,7 @@ export default function Contact() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 max-w-6xl mx-auto items-stretch">
-          
+
           {/* Left Panel: Contact info */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -93,7 +93,7 @@ export default function Contact() {
               <h3 className="font-heading font-bold text-2xl text-text-primary">
                 Let's Build Something Great Together
               </h3>
-              
+
               <p className="text-text-secondary text-base leading-relaxed">
                 Whether you want to discuss full-time roles, internship positions, collaborations, hackathons, or just want to connect, feel free to drop a message.
               </p>
@@ -249,13 +249,12 @@ export default function Contact() {
               {/* Status Alert Banner */}
               {status !== "idle" && (
                 <div
-                  className={`p-3.5 rounded-xl text-xs font-semibold ${
-                    status === "sending"
+                  className={`p-3.5 rounded-xl text-xs font-semibold ${status === "sending"
                       ? "bg-slate-800 text-primary border border-primary/20"
                       : status === "success"
-                      ? "bg-emerald-500/10 text-emerald-400 border border-emerald-500/25"
-                      : "bg-red-500/10 text-red-400 border border-red-500/25"
-                  }`}
+                        ? "bg-emerald-500/10 text-emerald-400 border border-emerald-500/25"
+                        : "bg-red-500/10 text-red-400 border border-red-500/25"
+                    }`}
                 >
                   {status === "sending" ? "Dispatching server request..." : statusMessage}
                 </div>
@@ -265,11 +264,10 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={status === "sending"}
-                className={`w-full flex items-center justify-center space-x-2 py-3.5 rounded-xl text-sm font-bold shadow-lg transition-all cursor-pointer hoverable ${
-                  status === "sending"
+                className={`w-full flex items-center justify-center space-x-2 py-3.5 rounded-xl text-sm font-bold shadow-lg transition-all cursor-pointer hoverable ${status === "sending"
                     ? "bg-slate-800 text-text-secondary border border-white/5 cursor-not-allowed"
                     : "bg-gradient-to-r from-primary to-secondary text-white hover:shadow-primary/25 hover:scale-[1.01]"
-                }`}
+                  }`}
               >
                 <FaPaperPlane size={13} />
                 <span>{status === "sending" ? "Sending Message..." : "Send Message"}</span>

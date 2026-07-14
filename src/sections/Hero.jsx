@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaArrowRight, FaDownload } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import { personalInfo } from "../data/portfolioData";
+import profileImage from "../assets/SouravPhoto(Uniform).jpg";
 
 export default function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -46,7 +47,7 @@ export default function Hero() {
   return (
     <section id="home" className="min-h-svh flex items-center justify-center pt-24 pb-12 relative">
       <div className="max-w-7xl mx-auto px-6 md:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        
+
         {/* Left Side Content Info */}
         <motion.div
           variants={containerVariants}
@@ -112,7 +113,7 @@ export default function Hero() {
               <span>View Projects</span>
               <FaArrowRight size={14} />
             </button>
-            
+
             <a
               href={personalInfo.resumeUrl}
               download
@@ -179,10 +180,10 @@ export default function Hero() {
         >
           {/* Animated background shape outline */}
           <div className="absolute w-[300px] h-[300px] md:w-[380px] md:h-[380px] rounded-full bg-gradient-to-tr from-primary via-secondary to-accent opacity-20 blur-[50px] animate-pulse" />
-          
+
           {/* Premium Profile Shape Frame */}
           <div className="relative w-[280px] h-[280px] md:w-[350px] md:h-[350px] rounded-3xl overflow-hidden glassmorphism border-2 border-white/15 p-4 flex items-center justify-center hover:border-primary/45 transition-colors duration-500 shadow-2xl hover:shadow-primary/15 group">
-            
+
             {/* Corner glowing nodes */}
             <div className="absolute -top-1 -left-1 w-6 h-6 border-t-2 border-l-2 border-primary rounded-tl-xl" />
             <div className="absolute -top-1 -right-1 w-6 h-6 border-t-2 border-r-2 border-secondary rounded-tr-xl" />
@@ -192,14 +193,14 @@ export default function Hero() {
             {/* Profile Avatar content */}
             <div className="w-full h-full rounded-2xl overflow-hidden bg-slate-950/60 border border-white/5 relative flex items-center justify-center">
               <img
-                src="https://avatars.githubusercontent.com/u/129761922?v=4"
+                src="src/assets/SouravPhoto(Uniform).jpg"
                 alt="Sourav Rana"
                 className="w-full h-full object-cover grayscale brightness-90 contrast-105 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                 onError={(e) => {
                   e.target.src = "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=500&auto=format&fit=crop";
                 }}
               />
-              
+
               {/* Overlay shading gradient */}
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500" />
             </div>
