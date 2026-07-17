@@ -11,7 +11,7 @@ export default function Projects() {
 
   // Get featured project (FitFuel Planner)
   const featuredProject = projects.find((p) => p.featured) || projects[0];
-  
+
   // Filter options
   const filterOptions = ["All", "Full Stack", "Machine Learning", "JavaScript", "React", "AI"];
 
@@ -54,7 +54,7 @@ export default function Projects() {
             className="glassmorphism rounded-3xl border border-white/10 overflow-hidden relative"
           >
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 p-6 md:p-10 items-center">
-              
+
               {/* Image Showcase - 5 cols */}
               <div className="lg:col-span-5 relative group overflow-hidden rounded-2xl border border-white/5 shadow-2xl">
                 <img
@@ -154,7 +154,7 @@ export default function Projects() {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
             <h3 className="font-heading font-bold text-2xl text-text-primary flex items-center space-x-2">
               <FaFilter size={16} className="text-secondary" />
-              <span>All Achievements & Creative Works</span>
+              <span>Featured Projects & Technical Work</span>
             </h3>
 
             {/* Filter Buttons */}
@@ -163,11 +163,10 @@ export default function Projects() {
                 <button
                   key={opt}
                   onClick={() => setActiveFilter(opt)}
-                  className={`py-1.5 px-4 rounded-xl text-xs font-semibold border transition-all cursor-pointer hoverable ${
-                    activeFilter === opt
+                  className={`py-1.5 px-4 rounded-xl text-xs font-semibold border transition-all cursor-pointer hoverable ${activeFilter === opt
                       ? "bg-secondary/15 text-secondary border-secondary/35 shadow-md shadow-secondary/5"
                       : "bg-slate-800/40 text-text-secondary border-white/5 hover:text-text-primary hover:bg-slate-800/80"
-                  }`}
+                    }`}
                 >
                   {opt}
                 </button>

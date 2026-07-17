@@ -42,7 +42,7 @@ export default function About() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          
+
           {/* Left Bio & Stats Column */}
           <div className="lg:col-span-7 space-y-8 text-left">
             <motion.div
@@ -56,10 +56,11 @@ export default function About() {
                 My Story & Ambitions
               </h3>
               <p className="text-text-secondary text-base leading-relaxed">
-                Enthusiastic Computer Science student with practical experience in full-stack web development using React, Node.js, MongoDB, and MySQL.
+                I am a B.Tech Computer Science student at COER University with a strong interest in Full Stack Development, Artificial Intelligence, and Machine Learning. I enjoy building practical software solutions that solve real-world problems and create meaningful user experiences.
               </p>
+
               <p className="text-text-secondary text-base leading-relaxed">
-                Passionate about developing innovative software solutions, solving computational challenges, and continuously learning modern technologies to bridge the gap between ideas and executable applications.
+                My experience includes developing projects such as FitFuel Planner, ERP Management System, Study Buddy AI, and Medical Chatbot. Alongside development, I have also worked on research involving EEG-based prediction of Alzheimer's disease and depression using Machine Learning and Deep Learning techniques.
               </p>
             </motion.div>
 
@@ -100,7 +101,7 @@ export default function About() {
             <h3 className="font-heading font-bold text-2xl text-text-primary">
               Education
             </h3>
-            
+
             <div className="space-y-6">
               {education.map((edu, idx) => (
                 <div

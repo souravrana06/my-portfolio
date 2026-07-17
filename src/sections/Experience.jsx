@@ -55,7 +55,7 @@ export default function Experience() {
                       {exp.company}
                     </p>
                   </div>
-                  
+
                   <span className="inline-flex items-center space-x-1.5 px-3.5 py-1 bg-white/5 rounded-full text-xs text-text-secondary font-medium border border-white/5 w-fit">
                     <FaCalendarAlt size={11} className="text-primary" />
                     <span>{exp.duration}</span>
@@ -68,7 +68,7 @@ export default function Experience() {
                     <FaBriefcase className="text-secondary" size={12} />
                     <span>Key Learning & Achievements</span>
                   </h4>
-                  
+
                   <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2">
                     {exp.responsibilities.map((resp, rIdx) => (
                       <li

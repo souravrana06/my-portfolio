@@ -51,9 +51,13 @@ export default function Research() {
                     <FaFileAlt size={10} />
                     <span>Review Paper</span>
                   </span>
-                  
+
                   <span className="inline-flex items-center px-3 py-1 bg-yellow-500/10 border border-yellow-500/20 rounded-full text-xs font-bold text-yellow-500 tracking-wide uppercase">
                     Status: {research.status}
+                  </span>
+
+                  <span className="inline-flex items-center px-3 py-1 bg-green-500/10 border border-green-500/20 rounded-full text-xs font-bold text-green-500 tracking-wide uppercase">
+                    Presented & Publication in Progress
                   </span>
                 </div>
 

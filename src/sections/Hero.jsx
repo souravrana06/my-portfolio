@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaArrowRight, FaDownload } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import { personalInfo } from "../data/portfolioData";
-import profileImage from "../assets/SouravPhoto(Uniform).jpg";
 
 export default function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);

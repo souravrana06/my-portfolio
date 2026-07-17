@@ -2,11 +2,14 @@ export const personalInfo = {
   name: "Sourav",
   roles: [
     "Full Stack Developer",
-    "Computer Science Engineer",
+    "AI & ML Enthusiast",
     "React Developer",
-    "Machine Learning Enthusiast"
+    "Researcher",
+    "Open Source Learner"
   ],
-  introduction: "Passionate Computer Science Engineering student focused on building scalable web applications, AI-powered solutions, and impactful digital experiences.",
+
+  introduction: "Final-year B.Tech Computer Science student passionate about Full Stack Development, Artificial Intelligence, and Machine Learning. Experienced in building scalable web applications, AI-powered solutions, and research-driven projects using React, Node.js, MongoDB, and modern technologies.",
+
   email: "sourav8739@gmail.com",
   phone: "+91 9045751181",
   location: "Saharanpur, Uttar Pradesh, India",
@@ -20,7 +23,8 @@ export const quickStats = [
   { label: "Projects Completed", value: "10+" },
   { label: "Internship Experience", value: "1" },
   { label: "Research Paper", value: "1" },
-  { label: "Hackathon Awards", value: "2" }
+  { label: "Hackathon Awards", value: "2" },
+  // { label: "Certificates", value: "20+" }
 ];
 
 export const education = [
@@ -77,20 +81,20 @@ export const experience = [
     role: "Trainee Intern",
     duration: "June 2026 - July 2026",
     responsibilities: [
-      "Data Structures & Algorithms Training",
-      "Machine Learning Training",
-      "Emerging Technologies Training",
-      "Hands-on Practical Assignments",
-      "Industry-Oriented Learning",
-      "Problem Solving & Software Development"
+      "Developed Java-based applications including Media Player and Priority Task Manager",
+      "Built Selenium automation projects for web testing",
+      "Worked on Machine Learning projects including E-Commerce Churn Prediction",
+      "Learned Data Structures & Algorithms through practical implementation",
+      "Explored AWS Cloud and Docker fundamentals",
+      "Developed Full Stack project: FitFuel Planner"
     ]
   }
 ];
 
 export const research = {
   title: "Alzheimer’s & Depression Prediction Using EEG Signals: A Comparative Study of Machine Learning and Deep Learning Methods",
-  status: "Under Review",
-  description: "Presented a review paper comparing Machine Learning and Deep Learning techniques for EEG-based prediction of Alzheimer’s disease and depression."
+  status: "Presented | Publication Under Review",
+  description: "Presented a review paper on EEG-based prediction of Alzheimer's disease and depression using Machine Learning and Deep Learning approaches. The paper was successfully presented and certified, and is currently undergoing the publication review process."
 };
 
 export const achievements = [
