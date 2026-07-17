@@ -192,7 +192,7 @@ export default function Hero() {
             {/* Profile Avatar content */}
             <div className="w-full h-full rounded-2xl overflow-hidden bg-slate-950/60 border border-white/5 relative flex items-center justify-center">
               <img
-                src="src/assets/SouravPhoto(Uniform).jpg"
+                src="C:\Users\DELL PC\Desktop\My Portfolio\src\assets\SouravPhoto(Uniform).jpg"
                 alt="Sourav Rana"
                 className="w-full h-full object-cover grayscale brightness-90 contrast-105 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                 onError={(e) => {
